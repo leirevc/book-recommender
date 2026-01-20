@@ -40,3 +40,8 @@ outputs/models/*.joblib
 # Sistema operativo
 .DS_Store
 Thumbs.db
+
+# Kaggle
+.kaggle/
+kaggle.json
+*.zip

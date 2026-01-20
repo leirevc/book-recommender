@@ -1,60 +1,107 @@
-# 📚 Sistema de Recomendación de Libros
+# 📚 Book Genre Classifier & Recommender System
 
-Proyecto de aprendizaje de Machine Learning para construir un recomendador de libros usando **TBC**.
+Sistema híbrido de clasificación de géneros literarios y recomendación de libros, desarrollado en Python utilizando técnicas de Machine Learning.
 
-## 🎯 Objetivo
+## 🎯 Objetivo del Proyecto
 
-Aprender conceptos fundamentales de ML:
-- Preprocesamiento de datos
-- Algoritmos de similitud
-- Evaluación de modelos de recomendación
+3 fases progresivas:
+1. **Fase 1:** Clasificación supervisada de géneros literarios
+2. **Fase 2:** Sistema de recomendación basado en similitud de características
+3. **Fase 3:** Integración de NLP para análisis de descripciones
 
-## 🛠️ Tecnologías
+## 🗂️ Fases del Proyecto
 
-- Python
-- pandas, numpy
-- scikit-learn
-- matplotlib, seaborn
-- Jupyter Notebook
+### ✅ Fase 1: Clasificación de Géneros
+**Estado:** 🚧 En progreso
 
-## 📁 Estructura
-```
-├── data/
-│   ├── processed/       # Datos limpios
-│   └── raw/             # Datos originales
-├── notebooks/           # Exploración
-├── outputs/
-│   ├── figures/         # Gráficos
-│   └── models/          # Modelos guardados
-├── src/                 # Código Python
-│   ├── data/            # Carga de datos
-│   ├── models/          # Modelos
-│   └── utils/           # Utilidades
-└── tests/               # Tests
-```
+**Objetivos:**
+- [ ] Análisis exploratorio de datos (EDA)
+- [ ] Preprocesamiento y limpieza
+- [ ] Entrenamiento de modelos supervisados:
+  - Logistic Regression (baseline)
+  - Decision Tree
+  - Random Forest
+- [ ] Evaluación y comparación de modelos
 
-## 🚀 Setup
-```bash
-# Crear entorno virtual
-python -m venv venv
+**Métricas objetivo:**
+- Accuracy > 70%
+- F1-Score balanceado
 
-# Activar
-venv\Scripts\activate  # Windows
-source venv/bin/activate  # Mac/Linux
+---
 
-# Instalar dependencias
-pip install -r requirements.txt
-```
+### ⏳ Fase 2: Sistema de Recomendación
+**Estado:** 📅 Planificado
+
+**Objetivos:**
+- [ ] Implementar K-Nearest Neighbors (KNN)
+- [ ] Calcular similitud entre libros usando:
+  - Autor
+  - Género predicho (Fase 1)
+  - Número de páginas
+  - Rating promedio
+- [ ] Crear función `recommend(book_title, n=5)`
+
+---
+
+### ⏳ Fase 3: Mejora con NLP
+**Estado:** 📅 Planificado
+
+**Objetivos:**
+- [ ] Preprocesamiento de descripciones de libros
+- [ ] TF-IDF para vectorización de texto
+- [ ] Integrar similitud semántica al recomendador
+- [ ] Modelo híbrido (features + texto)
+
+---
 
 ## 📊 Dataset
-
 TBC
 
-## ✅ Progreso
+## 🛠️ Tecnologías y Herramientas
 
-- [x] Setup del proyecto
-- [ ] Análisis exploratorio (EDA)
-- [ ] Preprocesamiento
-- [ ] Modelo baseline
-- [ ] Evaluación
+### Librerías Python
+```
+jupyter       # Notebooks interactivos
+```
+
+### Herramientas
+- **Python**
+- **Git** para control de versiones
+- **VS Code** como IDE
+- **Jupyter Notebooks** para exploración
+- **GitHub** para portfolio
+
+---
+
+## 📁 Estructura del Proyecto
+```
+├── data/
+│   ├── raw/              # Datos originales
+│   ├── processed/        # Datos procesados por fase
+│   └── models/           # Modelos entrenados
+├── notebooks/            # Notebooks de exploración
+│   ├── phase1/           # Clasificación
+│   ├── phase2/           # Recomendación básica
+│   ├── phase3/           # NLP
+│   └── experiments/      # Pruebas y tests
+├── src/                  # Código Python reutilizable
+│   ├── data/             # Carga y preprocesamiento
+│   ├── features/         # Feature engineering
+│   ├── models/           # Entrenamiento y predicción
+│   └── utils/            # Funciones auxiliares
+├── outputs/              # Resultados
+│   ├── figures/          # Gráficos
+│   └── reports/          # Reportes en Markdown
+└── docs/                 # Documentación
+```
+
+---
+
+## 📊 Resultados
+
+*Se actualizarán conforme avance el proyecto*
+
+
+
+---
 
