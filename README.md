@@ -15,8 +15,8 @@ Sistema híbrido de clasificación de géneros literarios y recomendación de li
 **Estado:** 🚧 En progreso
 
 **Objetivos:**
-- [ ] Análisis exploratorio de datos (EDA)
-- [ ] Preprocesamiento y limpieza
+- [X] Análisis exploratorio de datos (EDA)
+- [X] Preprocesamiento y limpieza
 - [ ] Entrenamiento de modelos supervisados:
   - Logistic Regression (baseline)
   - Decision Tree
